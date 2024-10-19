@@ -1,44 +1,37 @@
-.App {
-  font-family: Arial, sans-serif;
-  max-width: 500px;
+.task-manager {
+  width: 500px;
   height: 600px;
-  margin: auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding:20px;
   background-color: gray;
 }
 
-h1 {
-  text-align: center;
-}
-
-.task-input {
+form {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  gap: 10px;
 }
 
-.task-input input {
-  flex: 1;
+input,
+select,
+button {
   padding: 10px;
-  margin-right: 10px;
+  background-color: darkgray;
 }
 
-.task-input select {
-  padding: 10px;
-  margin-right: 10px;
-}
-
-.task-input button {
-  padding: 10px;
-}
-
-.task-list {
-  list-style-type: none;
+ul {
+  list-style: none;
   padding: 0;
 }
 
-.task-list li {
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  margin: 5px 0;
+  margin: 10px 0;
   border-radius: 5px;
+}
+
+button {
+  margin-left: 5px;
 }
